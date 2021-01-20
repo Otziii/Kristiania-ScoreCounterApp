@@ -121,10 +121,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/small_space"
-        android:background="@color/white"
+        android:background="@color/green"
         android:gravity="center"
         android:text="BLUE TEAM WON!"
-        android:textColor="@color/green"
+        android:textColor="@color/white"
         android:textSize="@dimen/big_text_size"
         app:layout_constraintTop_toTopOf="parent" />
 
