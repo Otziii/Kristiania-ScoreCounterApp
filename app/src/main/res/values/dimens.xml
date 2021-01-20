@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="score_text_size">75sp</dimen>
+    <dimen name="button_text_size">25sp</dimen>
+    <dimen name="big_button_text_size">35sp</dimen>
+    <dimen name="big_space">100dp</dimen>
+    <dimen name="medium_space">35dp</dimen>
+    <dimen name="small_space">15dp</dimen>
+    <dimen name="big_text_size">40sp</dimen>
+</resources>

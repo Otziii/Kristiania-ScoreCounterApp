@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/blue_team_score_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_space"
+        android:text="0"
+        android:textColor="@color/team_blue"
+        android:textSize="@dimen/score_text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/splitter_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/splitter_view"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/medium_space"
+        android:layout_marginBottom="@dimen/medium_space"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/new_game_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/red_team_score_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_space"
+        android:text="0"
+        android:textColor="@color/team_red"
+        android:textSize="@dimen/score_text_size"
+        app:layout_constraintLeft_toRightOf="@id/splitter_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/blue_team_score_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_space"
+        android:layout_marginTop="@dimen/big_space"
+        android:layout_marginRight="@dimen/small_space"
+        android:backgroundTint="@color/team_blue"
+        android:text="Blue team scores"
+        android:textAllCaps="false"
+        android:textSize="@dimen/button_text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/splitter_view"
+        app:layout_constraintTop_toBottomOf="@id/blue_team_score_label" />
+
+    <Button
+        android:id="@+id/blue_team_subtract_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_space"
+        android:layout_marginTop="@dimen/medium_space"
+        android:layout_marginRight="@dimen/small_space"
+        android:backgroundTint="@color/team_blue"
+        android:text="False goal"
+        android:textAllCaps="false"
+        android:textSize="@dimen/button_text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/splitter_view"
+        app:layout_constraintTop_toBottomOf="@id/blue_team_score_button" />
+
+    <Button
+        android:id="@+id/red_team_score_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_space"
+        android:layout_marginTop="@dimen/big_space"
+        android:layout_marginRight="@dimen/small_space"
+        android:backgroundTint="@color/team_red"
+        android:text="Red team scores"
+        android:textAllCaps="false"
+        android:textSize="@dimen/button_text_size"
+        app:layout_constraintLeft_toRightOf="@id/splitter_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/blue_team_score_label" />
+
+    <Button
+        android:id="@+id/red_team_subtract_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_space"
+        android:layout_marginTop="@dimen/medium_space"
+        android:layout_marginRight="@dimen/small_space"
+        android:backgroundTint="@color/team_red"
+        android:text="False goal"
+        android:textAllCaps="false"
+        android:textSize="@dimen/button_text_size"
+        app:layout_constraintLeft_toRightOf="@id/splitter_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/red_team_score_button" />
+
+    <Button
+        android:id="@+id/new_game_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_space"
+        android:backgroundTint="@color/white"
+        android:text="New game"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/big_button_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/victory_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_space"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="BLUE TEAM WON!"
+        android:textColor="@color/green"
+        android:textSize="@dimen/big_text_size"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
